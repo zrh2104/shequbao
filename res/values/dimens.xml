@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="small_dividing_line">1dp</dimen>
+    <dimen name="big_dividing_line">15dp</dimen>
+    <dimen name="middle_dividing_line">3dp</dimen>
+    <dimen name="small_content_box">50dp</dimen>
+    <dimen name="middle_content_box">70dp</dimen>
+    <dimen name="big_content_box">75dp</dimen>
+    <dimen name="big_content_box_middline">55dp</dimen>
+    <dimen name="big_homepage_content2_box">150dp</dimen>
+    <dimen name="small_homepage_content2_box">75dp</dimen>
+    <dimen name="padding_size_box">5dp</dimen>
+     <dimen name="padding_left_size_text">5dp</dimen>
+     <dimen name="image_heightsize_homepage_content3">140dp</dimen>
+     <dimen name="image_heightsize_homepage_content4">140dp</dimen>
+     <dimen name="image_heightsize_mepage">150dp</dimen>
+     <dimen name="content_margin">8.0dip</dimen>
+         <dimen name="cell_height">48.0dip</dimen>
+             <dimen name="submit_text_size">20.0sp</dimen>
+         
+         <dimen name="one_px">1.0px</dimen>
+                 <dimen name="third_icon_size">50.0dip</dimen>
+                                  <dimen name="nav_text_size">12sp</dimen>
+                 
+                 
+         
+     
+     
+
+</resources>

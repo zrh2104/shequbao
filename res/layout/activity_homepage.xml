@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/activity_homepage_common_head"
+        layout="@layout/common_above_title" />
+
+    <FrameLayout
+        android:id="@+id/activity_homepage_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_homepage_common_head" />
+
+    <RadioGroup
+        android:id="@+id/activity_homepage_tabmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:background="@color/hui_line_color"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/activity_homepage_homepage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_nav_home_button"
+            android:gravity="center_horizontal|bottom"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="首页"
+            android:textColor="@color/hui_dan"
+            android:textSize="@dimen/nav_text_size" />
+
+        <RadioButton
+            android:id="@+id/activity_homepage_shop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_nav_shop_button"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="商家"
+            android:textColor="@color/hui_dan"
+            android:textSize="@dimen/nav_text_size" />
+
+        <RadioButton
+            android:id="@+id/activity_homepage_linli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_nav_luntan_button"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="论坛"
+            android:textColor="@color/hui_dan"
+            android:textSize="@dimen/nav_text_size" />
+
+        <RadioButton
+            android:id="@+id/activity_homepage_tegong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_nav_tegong_button"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="拼车"
+            android:textColor="@color/hui_dan"
+            android:textSize="@dimen/nav_text_size" />
+
+        <RadioButton
+            android:id="@+id/activity_homepage_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_nav_me_button"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:text="我的"
+            android:textColor="@color/hui_dan"
+            android:textSize="@dimen/nav_text_size" />
+    </RadioGroup>
+
+</RelativeLayout>

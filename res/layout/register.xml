@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.shequbao.widget.ClearEditTextView
+        android:id="@+id/registor_username"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cell_height"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/text_field_without_top_border"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="用户名/手机号码"
+        android:singleLine="true"
+        android:layout_marginLeft="10dip"  
+android:layout_marginRight="10dip"
+        android:textColor="#ff555555"
+        android:textColorHint="#ff888888"
+        android:textSize="16.0sp" />
+
+    <com.shequbao.widget.ClearEditTextView
+        android:id="@+id/registor_passwd1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cell_height"
+        android:background="@drawable/text_field_without_top_border"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_marginLeft="10dip"  
+android:layout_marginRight="10dip"
+        android:textColor="#ff555555"
+        android:textColorHint="#ff888888"
+        android:textSize="16.0sp" />
+ <com.shequbao.widget.ClearEditTextView
+        android:id="@+id/registor_passwd2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cell_height"
+        android:background="@drawable/text_field_without_top_border"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="重复密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_marginLeft="10dip"  
+android:layout_marginRight="10dip"
+        android:textColor="#ff555555"
+        android:textColorHint="#ff888888"
+        android:textSize="16.0sp" />
+    <TextView
+        android:id="@+id/registor_registor"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cell_height"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/selector_green_corners_button"
+        android:gravity="center"
+        android:text="注册"
+        android:layout_marginLeft="10dip"  
+android:layout_marginRight="10dip"
+        android:textColor="@color/white"
+        android:textSize="@dimen/submit_text_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:textColor="@color/daoh_hui" />
+
+    <TextView
+        android:id="@+id/registor_reset"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cell_height"
+android:layout_marginLeft="10dip"  
+android:layout_marginRight="10dip"
+      android:background="@drawable/selector_green_corners_button"
+        android:gravity="center"
+        android:text="重置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/submit_text_size" />
+
+</LinearLayout>

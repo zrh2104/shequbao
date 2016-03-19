@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/big_dividing_line"
+        android:background="@color/bts_order_line" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/line5"
+        android:background="@color/bts_spinner_line" />
+
+    <LinearLayout
+        android:id="@+id/bts_temporary_order_time_view"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_below="@id/line1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pingche_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/pingchetime"
+            android:drawablePadding="5dip"
+            android:paddingLeft="20dip"
+            android:text="出发时间"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/bts_temporary_order_time_view"
+        android:layout_marginLeft="@dimen/big_dividing_line"
+        android:background="@color/bts_order_line" />
+
+    <LinearLayout
+        android:id="@+id/bts_temporary_order_info_view"
+        android:layout_width="fill_parent"
+        android:layout_height="92dip"
+        android:layout_below="@id/line2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pingche_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:paddingLeft="20dip"
+            android:paddingTop="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/pingche_driver_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dip" >
+
+            <TextView
+                android:id="@+id/pingche_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="用户名" />
+
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pingche_startdes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/pingche_start"
+                    android:drawablePadding="10dip"
+                    android:gravity="center_vertical"
+                    android:text="起点" />
+
+                <TextView
+                    android:id="@+id/pingche_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="100dip"
+                    android:text="距我50KM"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pingche_enddes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/pingche_end"
+                    android:drawablePadding="10dip"
+                    android:gravity="center_vertical"
+                    android:text="终点" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/bts_temporary_order_info_view"
+        android:layout_marginLeft="15dip"
+        android:background="@color/bts_order_line" />
+
+    <RelativeLayout
+        android:id="@+id/bts_temporary_order_price_view"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_below="@id/line3" >
+
+        <ImageView
+            android:id="@+id/pingche_place_icon_nums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:src="@drawable/star0" />
+
+        <TextView
+            android:id="@+id/pingche_place_Textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pingche_place_icon_nums"
+            android:paddingLeft="20dip"
+            android:text="剩余5个座位"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/pingche_place_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+            
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/pingche_selector_corners_button"
+            android:text="我要拼车"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/bts_temporary_order_price_view"
+        android:background="@color/bts_spinner_line" />
+
+</RelativeLayout>

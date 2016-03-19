@@ -1,0 +1,30 @@
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+        
+           android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+        <ProgressBar
+      style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/luntan_ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:visibility="gone"
+        />
+<ScrollView 
+    android:id="@+id/luntan_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+
+<WebView
+    android:id="@+id/luntan_webview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     >
+</WebView>
+
+</ScrollView>
+</LinearLayout>
