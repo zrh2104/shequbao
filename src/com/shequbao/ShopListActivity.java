@@ -43,7 +43,6 @@ import com.shequbao.tools.MyJson;
  * 店铺列表模块
  * */
 public class ShopListActivity extends Activity {
-private string xx;
 	private ListView mListView, mShoplist_toplist, mShoplist_threelist,
 			mShoplist_onelist2, mShoplist_twolist2, mShoplist_onelist1,
 			mShoplist_twolist1;
