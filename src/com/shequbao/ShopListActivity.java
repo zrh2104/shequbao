@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import android.R.string;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -42,7 +43,7 @@ import com.shequbao.tools.MyJson;
  * 店铺列表模块
  * */
 public class ShopListActivity extends Activity {
-
+private string xx;
 	private ListView mListView, mShoplist_toplist, mShoplist_threelist,
 			mShoplist_onelist2, mShoplist_twolist2, mShoplist_onelist1,
 			mShoplist_twolist1;
