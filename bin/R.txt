@@ -191,8 +191,9 @@ int color red_weibo 0x7f060020
 int color red_weibo_pressed 0x7f060021
 int color selector_active_me_button_change 0x7f060049
 int color selector_me_activity_bottom_colorchage 0x7f06004a
-int color shape_daohhui__button 0x7f06004b
-int color shape_white2__button 0x7f06004c
+int color selector_nav_bottom_colorchage 0x7f06004b
+int color shape_daohhui__button 0x7f06004c
+int color shape_white2__button 0x7f06004d
 int color text_field_pressed 0x7f060012
 int color total_price 0x7f060042
 int color white 0x7f060008

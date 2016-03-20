@@ -385,8 +385,7 @@ public class MyBDLocationListener implements BDLocationListener{
 			twoadapter1.setSelectItem(arg2);
 			Drawable drawable = getResources().getDrawable(
 					R.drawable.ic_arrow_down_black);
-			drawable.setBounds(0, 0, drawable.getMinimumWidth(),
-					drawable.getMinimumHeight());
+			drawable.setBounds(0, 0, drawable.getMinimumWidth(),drawable.getMinimumHeight());
 			mShoplist_title_textbtn1.setCompoundDrawables(null, null, drawable,
 					null);
 			int position = oneadapter1.getSelectItem();

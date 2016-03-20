@@ -933,8 +933,9 @@ containing a value of this type.
         public static final int red_weibo_pressed=0x7f060021;
         public static final int selector_active_me_button_change=0x7f060049;
         public static final int selector_me_activity_bottom_colorchage=0x7f06004a;
-        public static final int shape_daohhui__button=0x7f06004b;
-        public static final int shape_white2__button=0x7f06004c;
+        public static final int selector_nav_bottom_colorchage=0x7f06004b;
+        public static final int shape_daohhui__button=0x7f06004c;
+        public static final int shape_white2__button=0x7f06004d;
         public static final int text_field_pressed=0x7f060012;
         public static final int total_price=0x7f060042;
         public static final int white=0x7f060008;

@@ -52,7 +52,7 @@
     <LinearLayout
         android:id="@+id/middlelinearlayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dip"
         android:layout_below="@+id/titlerelativelayout" >
 
         <LinearLayout
@@ -72,6 +72,7 @@
                 android:background="@drawable/my_tab_background"
                 android:drawableRight="@drawable/ic_arrow_down_black"
                 android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:singleLine="true"
                 android:text="全部地区"

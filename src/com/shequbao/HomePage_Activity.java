@@ -7,6 +7,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 
+import com.shequbao.R.color;
 import com.shequbao.base.BaseActivity;
 import com.shequbao.fragment.fragment_home_page;
 import com.shequbao.fragment.fragment_luntan_page;
