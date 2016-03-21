@@ -12,7 +12,7 @@ import com.shequbao.base.BaseActivity;
 import com.shequbao.fragment.fragment_home_page;
 import com.shequbao.fragment.fragment_luntan_page;
 import com.shequbao.fragment.fragment_me_page;
-import com.shequbao.fragment.fragment_pinche_page;
+import com.shequbao.fragment.fragment_pingche_main;
 
 public class HomePage_Activity extends BaseActivity implements
 		fragment_luntan_page.BackHandlerInterface {
@@ -22,13 +22,13 @@ public class HomePage_Activity extends BaseActivity implements
 	private Fragment homepage_content;
 	private Fragment shop_content;
 	private Fragment linlipage_content;
-	private Fragment tegongpage_content;
+	private Fragment pingche_content;
 	private fragment_luntan_page selectedFragment;
 	private Boolean isexit = false;
     private RadioButton home_buttion;
     private RadioButton shop_buttion;
     private RadioButton luntan_buttion;
-    private RadioButton tegong_buttion;
+    private RadioButton pingche_button;
     private RadioButton me_buttion;
 private Handler myhandler=new Handler();
     
@@ -41,7 +41,7 @@ private Handler myhandler=new Handler();
 		home_buttion= (RadioButton) findViewById(R.id.activity_homepage_homepage);
 		shop_buttion= (RadioButton) findViewById(R.id.activity_homepage_shop);
 		luntan_buttion= (RadioButton) findViewById(R.id.activity_homepage_linli);
-		tegong_buttion= (RadioButton) findViewById(R.id.activity_homepage_tegong);
+		pingche_button= (RadioButton) findViewById(R.id.activity_homepage_tegong);
 		me_buttion= (RadioButton) findViewById(R.id.activity_homepage_me);
 setbuttonsize();
 		initView();
@@ -135,11 +135,11 @@ setbuttonsize();
 
 					break;
 				case R.id.activity_homepage_tegong:
-					tegongpage_content = new fragment_pinche_page();
+					pingche_content = new fragment_pingche_main();
 					getSupportFragmentManager()
 							.beginTransaction()
 							.replace(R.id.activity_homepage_content,
-									tegongpage_content).commit();
+									pingche_content).commit();
 					selectedFragment = null;
 
 					break;

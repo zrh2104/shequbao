@@ -1,5 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content" >
 
@@ -19,12 +20,7 @@
         <include
             android:id="@+id/id_activity_homepage_content2"
             layout="@layout/activity_homepage_content2" />
-        <include
-            android:id="@+id/id_activity_homepage_content3"
-            layout="@layout/activity_homepage_content3" />
-         <include
-            android:id="@+id/id_activity_homepage_content4"
-            layout="@layout/activity_homepage_content4" />
+
           <TextView
             android:layout_width="match_parent"
             android:layout_height="@dimen/big_content_box"

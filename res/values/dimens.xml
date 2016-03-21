@@ -13,6 +13,8 @@
     <dimen name="big_homepage_content2_box">150dp</dimen>
     <dimen name="small_homepage_content2_box">75dp</dimen>
     <dimen name="padding_size_box">5dp</dimen>
+        <dimen name="home_frame_text_size">20.0sp</dimen>
+    
      <dimen name="padding_left_size_text">5dp</dimen>
      <dimen name="image_heightsize_homepage_content3">140dp</dimen>
      <dimen name="image_heightsize_homepage_content4">140dp</dimen>

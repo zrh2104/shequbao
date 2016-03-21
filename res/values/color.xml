@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+        <color name="hui_sheng">#ffcecece</color>
+    
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
     <color name="hui_line_color">#fff5f5f5</color>
     <color name="white_color">#ffffffff</color>
     <color name="me_page_imagecolor">#ff05c0ab</color>
+    <color name="me_page_imagecolor_pressed">#5505c0ab</color>
     <color name="pressed_color">#ff05c0ab</color>
     <color name="gray_bg">#ffeeeeec</color>
     <color name="white">#ffffffff</color>

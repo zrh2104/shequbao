@@ -2,11 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/daoh_hui"
     android:orientation="vertical" >
 <!-- 这个页面是首页中间部分的页面 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+       
+            android:background="@drawable/layout_home_bg_selector"
+       android:layout_marginLeft="5dip"
+       android:layout_marginRight="5dip"
         android:orientation="horizontal" >
 
         <ImageView
@@ -31,14 +36,15 @@
             android:text="这里显示通知消息" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/big_dividing_line"
-        android:background="@color/hui_line_color" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/big_content_box"
+             android:background="@drawable/layout_home_bg_selector"
+             android:layout_marginTop="@dimen/middle_dividing_line"
+       android:layout_marginLeft="5dip"
+       android:layout_marginRight="5dip"
         android:orientation="horizontal" >
 
         <LinearLayout
@@ -87,11 +93,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="@dimen/middle_dividing_line"
-        android:background="@color/hui_line_color" />
+                android:background="@color/hui_line_color"
+        
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/big_content_box"
+             android:background="@drawable/layout_home_bg_selector"
+       android:layout_marginLeft="5dip"
+       android:layout_marginRight="5dip"
+       android:layout_marginBottom="@dimen/big_dividing_line"
         android:orientation="horizontal" >
 
         <LinearLayout
@@ -133,13 +145,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:paddingLeft="@dimen/padding_left_size_text"
+                
                 android:text="这里显示活动信息4" />
         </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/big_dividing_line"
-        android:background="@color/hui_line_color" />
+ 
 
 </LinearLayout>
