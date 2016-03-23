@@ -12,6 +12,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
 import android.util.Log;
@@ -38,11 +39,11 @@ public class MyPost {
 		nameValuePairs.add(new BasicNameValuePair("mycode", mycode));
 		nameValuePairs.add(new BasicNameValuePair("value", value));
 		try {
-			post.setEntity(new UrlEncodedFormEntity(nameValuePairs, "utf-8"));
+			post.setEntity(new UrlEncodedFormEntity(nameValuePairs, HTTP.UTF_8));
 			httpResponse = client.execute(post);
 			Log.e("HTTP", "CODE" + httpResponse.getStatusLine().getStatusCode());
 			if (httpResponse.getStatusLine().getStatusCode() == 200) {
-				result = EntityUtils.toString(httpResponse.getEntity(), "utf-8");
+				result = EntityUtils.toString(httpResponse.getEntity(), HTTP.UTF_8);
 				Log.e("HTTP", "result:" + result);
 			} else {
 				result = null;

@@ -34,7 +34,7 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center"
                 android:text="古雷时事"
-                android:textColor="#ff37c49a"
+                             android:textColor="#ff37c49a"
                 android:textSize="@dimen/home_frame_text_size" />
         </RelativeLayout>
 

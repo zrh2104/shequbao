@@ -81,6 +81,8 @@ public class MyJson {
 //					pingcheinfo.setSdistance(rs.getNString("sdistance"));
 					info.setSseat(job.getString("sseat"));
 					info.setSprice(job.getString("sprice"));
+					info.setLatitude(job.getString("latitude"));
+					info.setLongitude(job.getString("longitude"));
 					list.add(info);
 				}
 			} catch (JSONException e) {

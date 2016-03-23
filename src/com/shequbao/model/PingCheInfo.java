@@ -20,6 +20,20 @@ public class PingCheInfo implements Serializable {
 	private String sseatplace;//余下的席位
 	private String sprice;//价格
 	private String sphonenum;//电话
+	private String longitude;
+	private String latitude;
+	public String getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+	public String getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
 	public String getSuser() {
 		return suser;
 	}

@@ -33,6 +33,8 @@ public class fragment_home_page extends android.support.v4.app.Fragment {
 	public View view;
 	public ImageView[] imageviewlist;
 	public RequestQueue mQueue;
+	private Boolean isthis=true;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -96,8 +98,11 @@ public class fragment_home_page extends android.support.v4.app.Fragment {
 					@Override
 					public void onErrorResponse(VolleyError error) {
 						// TODO Auto-generated method stub
-						Toast.makeText(getActivity(), error.getMessage(),
-								Toast.LENGTH_SHORT).show();
+						if (isthis) {
+							Toast.makeText(getActivity(), "网络异常",
+									Toast.LENGTH_SHORT).show();
+							
+						}
 						System.out.println("长度是" + mQueue.getCache().get(url));
 						// 获取缓存数据
 						if (mQueue.getCache().get(url) != null) {// 判断缓存是否存在
@@ -176,6 +181,6 @@ public void onDestroy() {
 	super.onDestroy();
 	System.out.println("onDestroy");
 	mAdView.pushImageCycle();
-
+isthis=false;
 }
 }

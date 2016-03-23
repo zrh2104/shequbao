@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--             android:descendantFocusability="blocksDescendants"这个属性解决viepager中listview无法点击的问题 -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+    
     android:background="@color/white" >
 
     <View
@@ -77,11 +81,12 @@
                 android:gravity="center_vertical"
                 android:text="用户名" />
 
-            <LinearLayout
+            <RelativeLayout
                 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
                 <TextView
@@ -90,6 +95,8 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/pingche_start"
                     android:drawablePadding="10dip"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
                     android:gravity="center_vertical"
                     android:text="起点" />
 
@@ -97,11 +104,15 @@
                     android:id="@+id/pingche_distance"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="100dip"
                     android:text="距我50KM"
+                    android:singleLine="true"
+                    android:layout_marginTop="7dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
                     android:textColor="#666666"
-                    android:textSize="13sp" />
-            </LinearLayout>
+                        android:textSize="10sp"  />
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

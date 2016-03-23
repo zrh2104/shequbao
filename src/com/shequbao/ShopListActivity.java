@@ -64,9 +64,10 @@ public class ShopListActivity extends Activity {
 	private Button ListBottem = null;
 	private ImageView mSearch_city_img;
 	private TextView mShoplist_title_txt;
+	private int page=1;
 	private int mStart = 1;
 	private int mEnd = 5;
-	private String url = "/xgcsq/shopdataservlet";
+	private String url = "/xgcsq/shopdataservlet?page=";
 	private boolean flag = true;
 	private boolean listBottemFlag = true;
 	private boolean toplistview = false;
@@ -160,8 +161,9 @@ private BDLocation mlocation=null;
 			@Override
 			public void onClick(View v) {
 				if (flag && listBottemFlag) {
-					ThreadPoolUtils.execute(new HttpGetThread(hand, url));
+					ThreadPoolUtils.execute(new HttpGetThread(hand, url+""+page));
 					listBottemFlag = false;
+					
 				} else if (!listBottemFlag)
 					Toast.makeText(ShopListActivity.this, "加载中请稍候", 1).show();
 			}
@@ -170,7 +172,7 @@ private BDLocation mlocation=null;
 		ListBottem.setVisibility(View.GONE);
 		mListView.setAdapter(mAdapter);
 		mListView.setOnItemClickListener(new MainListOnItemClickListener());
-		ThreadPoolUtils.execute(new HttpGetThread(hand, url));
+		ThreadPoolUtils.execute(new HttpGetThread(hand, url+""+page));
 	}
 public class MyBDLocationListener implements BDLocationListener{
 
@@ -307,6 +309,7 @@ public class MyBDLocationListener implements BDLocationListener{
 				Toast.makeText(ShopListActivity.this, "传输失败", 1).show();
 				listBottemFlag = true;
 			} else if (msg.what == 200) {
+				page++;
 				String result = (String) msg.obj;
 				// 在activity当中获取网络交互的数据
 				if (result != null) {
@@ -356,6 +359,7 @@ public class MyBDLocationListener implements BDLocationListener{
 //			bund.putSerializable("ShopInfo",list.get(arg2));
 //			intent.putExtra("value",bund);
 //			startActivity(intent);
+			Toast.makeText(ShopListActivity.this, "第"+arg2, 0).show();
 		}
 	}
 
